@@ -1,14 +1,9 @@
 NAME = factory
 CPP = g++
 CPPFLAGS = -Wall -Wextra -Werror
-SRC = main.cpp \
-		TextDocument.cpp TextMenu.cpp TextToolbar.cpp \
-		PDFDocument.cpp PDFMenu.cpp PDFToolbar.cpp \
-		TextFactory.cpp PDFFactory.cpp
-HEADER = TextDocument.hpp TextMenu.hpp TextToolbar.hpp \
-		PDFDocument.hpp PDFMenu.hpp PDFToolbar.hpp \
-		TextFactory.hpp PDFFactory.hpp AbstractFactory.hpp \
-		Document.hpp Toolbar.hpp Menu.hpp
+SRC = main.cpp PDFApplication.cpp PDFDocument.cpp TextApplication.cpp TextDocument.cpp
+HEADER = Application.hpp Document.hpp PDFApplication.hpp PDFDocument.hpp \
+		 TextApplication.hpp TextDocument.hpp Menu.hpp
 OBJ_DIR = obj
 OBJS = $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
