@@ -3,7 +3,7 @@ CPP = g++
 CPPFLAGS = -Wall -Wextra -Werror
 SRC = main.cpp PDFApplication.cpp PDFDocument.cpp TextApplication.cpp TextDocument.cpp
 HEADER = Application.hpp Document.hpp PDFApplication.hpp PDFDocument.hpp \
-		 TextApplication.hpp TextDocument.hpp Menu.hpp
+		 TextApplication.hpp TextDocument.hpp
 OBJ_DIR = obj
 OBJS = $(SRC:%.cpp=$(OBJ_DIR)/%.o)
 
